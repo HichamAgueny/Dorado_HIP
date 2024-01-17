@@ -8,8 +8,8 @@
 #include "cuda_utils.h"
 #include "dev_utils.h"
 
-#include <ATen/cuda/CUDAContext.h>
-#include <cuda_runtime.h>
+#include <ATen/cuda/HIPContext.h>
+#include <hip/hip_runtime.h>
 #include <nvtx3/nvtx3.hpp>
 
 namespace dorado::utils {
@@ -26,8 +26,8 @@ public:
                        get_dev_opt<int>("cuda_profile_level", CUDA_PROFILE_LEVEL_DEFAULT)) {
         if (m_active) {
             m_stream = at::cuda::getCurrentCUDAStream().stream();
-            handle_cuda_result(cudaEventCreate(&m_start));
-            handle_cuda_result(cudaEventRecord(m_start, m_stream));
+            handle_cuda_result(hipEventCreate(&m_start));
+            handle_cuda_result(hipEventRecord(m_start, m_stream));
         }
     }
 
@@ -38,22 +38,22 @@ private:
         if (!m_active) {
             return;
         }
-        cudaEvent_t stop;
-        handle_cuda_result(cudaEventCreate(&stop));
-        handle_cuda_result(cudaEventRecord(stop, m_stream));
-        handle_cuda_result(cudaEventSynchronize(stop));
+        hipEvent_t stop;
+        handle_cuda_result(hipEventCreate(&stop));
+        handle_cuda_result(hipEventRecord(stop, m_stream));
+        handle_cuda_result(hipEventSynchronize(stop));
         float timeMs = 0.0f;
-        handle_cuda_result(cudaEventElapsedTime(&timeMs, m_start, stop));
-        handle_cuda_result(cudaEventDestroy(m_start));
-        handle_cuda_result(cudaEventDestroy(stop));
+        handle_cuda_result(hipEventElapsedTime(&timeMs, m_start, stop));
+        handle_cuda_result(hipEventDestroy(m_start));
+        handle_cuda_result(hipEventDestroy(stop));
         std::cerr << std::string(m_detail_level - 1, '\t') << "[" << m_label << " " << timeMs
                   << " ms]" << std::endl;
         m_active = false;
     }
 
     const char *m_label;
-    cudaStream_t m_stream;
-    cudaEvent_t m_start;
+    hipStream_t m_stream;
+    hipEvent_t m_start;
     int m_detail_level;
     bool m_active;
 };

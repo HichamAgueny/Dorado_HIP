@@ -14,7 +14,7 @@
 
 #include "utils/cuda_utils.h"
 
-#include <ATen/cuda/CUDAContext.h>
+#include <ATen/cuda/HIPContext.h>
 #include <c10/cuda/CUDAGuard.h>
 
 extern "C" {
@@ -95,11 +95,11 @@ enum class TensorLayout { NTC, TNC, CUTLASS_TNC_F16, CUTLASS_TNC_I8, CUBLAS_TN2C
 
 // TODO: These should really be part of Koi
 bool koi_can_use_cutlass() {
-    cudaDeviceProp *prop = at::cuda::getCurrentDeviceProperties();
+    hipDeviceProp_t *prop = at::cuda::getCurrentDeviceProperties();
     return ((prop->major == 8 || prop->major == 9) && prop->minor == 0);
 }
 bool koi_can_use_quantised_lstm() {
-    cudaDeviceProp *prop = at::cuda::getCurrentDeviceProperties();
+    hipDeviceProp_t *prop = at::cuda::getCurrentDeviceProperties();
     // DP4A is supported on Pascal and later, except for TX2 (sm_62).
     return (prop->major > 6) || (prop->major == 6 && prop->minor != 2);
 }

@@ -28,7 +28,7 @@ void print_cuda_alloc_info(const std::string &label);
 
 void matmul_f16(const at::Tensor &A, const at::Tensor &B, at::Tensor &C);
 
-// Deal with a result from a cudaGetLastError call.  May raise an exception to provide information to the user.
+// Deal with a result from a hipGetLastError call.  May raise an exception to provide information to the user.
 void handle_cuda_result(int cuda_result);
 
 namespace details {

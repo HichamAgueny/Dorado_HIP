@@ -2,11 +2,11 @@
 
 #include "math_utils.h"
 
-#include <ATen/cuda/CUDAContext.h>
+#include <ATen/cuda/HIPContext.h>
 #include <c10/cuda/CUDAGuard.h>
-#include <cublas_v2.h>
-#include <cuda_runtime.h>
-#include <cuda_runtime_api.h>
+#include <hipblas.h>
+#include <hip/hip_runtime.h>
+#include <hip/hip_runtime_api.h>
 #include <spdlog/spdlog.h>
 
 #include <array>
@@ -31,7 +31,7 @@ namespace {
  * Wrapper around CUDA events to measure GPU timings.
  */
 class CUDATimer {
-    cudaEvent_t m_start, m_stop;
+    hipEvent_t m_start, m_stop;
 
     CUDATimer(const CUDATimer &) = delete;
     CUDATimer &operator=(const CUDATimer &) = delete;
@@ -42,14 +42,14 @@ public:
      * The timer will start once all previously submitted CUDA work
      * has completed on the active stream.
      */
-    void start() { handle_cuda_result(cudaEventRecord(m_start)); }
+    void start() { handle_cuda_result(hipEventRecord(m_start)); }
 
     /**
      * Mark the end of a profiling section.
      * The timer will stop once all previously submitted CUDA work
      * has completed on the active stream.
      */
-    void stop() { handle_cuda_result(cudaEventRecord(m_stop)); }
+    void stop() { handle_cuda_result(hipEventRecord(m_stop)); }
 
     /**
      * Get the time spent on the GPU between the begin and end markers.
@@ -57,19 +57,19 @@ public:
      * has been reached on the active stream.
      */
     float result_ms() {
-        handle_cuda_result(cudaEventSynchronize(m_stop));
+        handle_cuda_result(hipEventSynchronize(m_stop));
         float ms = 0;
-        handle_cuda_result(cudaEventElapsedTime(&ms, m_start, m_stop));
+        handle_cuda_result(hipEventElapsedTime(&ms, m_start, m_stop));
         return ms;
     }
 
     CUDATimer() {
-        handle_cuda_result(cudaEventCreate(&m_start));
-        handle_cuda_result(cudaEventCreate(&m_stop));
+        handle_cuda_result(hipEventCreate(&m_start));
+        handle_cuda_result(hipEventCreate(&m_stop));
     }
     ~CUDATimer() {
-        handle_cuda_result(cudaEventDestroy(m_start));
-        handle_cuda_result(cudaEventDestroy(m_stop));
+        handle_cuda_result(hipEventDestroy(m_start));
+        handle_cuda_result(hipEventDestroy(m_stop));
     }
 };
 
@@ -84,15 +84,15 @@ MatmulMode get_cuda_matmul_fp16_mode() {
             spdlog::debug(">   Using torch::matmul");
             return MatmulMode::TORCH;
         } else if (matmul_fp16_mode_str == "CUBLAS") {
-            spdlog::debug(">   Using cublasGemmEx");
+            spdlog::debug(">   Using hipblasGemmEx");
             return MatmulMode::CUBLAS;
         }
         spdlog::debug(">   Ignoring unrecognized option. Select from TORCH or CUBLAS.");
     }
 
-    // torch::matmul() is a bit slower than cublasGemmEx() on A100 and V100, and 2x slower on TX2
+    // torch::matmul() is a bit slower than hipblasGemmEx() on A100 and V100, and 2x slower on TX2
     // but an order of magnitude faster on 1080 Ti (sm61)
-    cudaDeviceProp *prop = at::cuda::getCurrentDeviceProperties();
+    hipDeviceProp_t *prop = at::cuda::getCurrentDeviceProperties();
     bool is_sm61 = (prop->major == 6 && prop->minor == 1);
     if (is_sm61) {
         return MatmulMode::TORCH;
@@ -169,21 +169,21 @@ void print_cuda_alloc_info(const std::string &label) {
 size_t available_memory(torch::Device device) {
     size_t free, total;
     c10::cuda::CUDAGuard device_guard(device);
-    cudaMemGetInfo(&free, &total);
+    hipMemGetInfo(&free, &total);
     return free;
 }
 
 void handle_cuda_result(int cuda_result) {
-    if (cuda_result == cudaSuccess)
+    if (cuda_result == hipSuccess)
         return;
 
-    if (cuda_result == cudaErrorNoKernelImageForDevice) {
+    if (cuda_result == hipErrorNoBinaryForGpu) {
         throw std::runtime_error(
                 std::string("Dorado cannot support the CUDA device being used,"
                             " as the compute capability version is incompatible."));
     } else {
         throw std::runtime_error(std::string("Cuda error: ") +
-                                 cudaGetErrorString(cudaError_t(cuda_result)));
+                                 hipGetErrorString(hipError_t(cuda_result)));
     }
 }
 
@@ -196,12 +196,12 @@ void matmul_f16_cublas(const at::Tensor &A, const at::Tensor &B, at::Tensor &C) 
     assert(A.size(0) == C.size(0));  // M
     assert(B.size(1) == C.size(1));  // N
     assert(A.size(1) == B.size(0));  // K
-    auto res = cublasGemmEx(at::cuda::getCurrentCUDABlasHandle(), CUBLAS_OP_N, CUBLAS_OP_N,
+    auto res = hipblasGemmEx(at::cuda::getCurrentCUDABlasHandle(), HIPBLAS_OP_N, HIPBLAS_OP_N,
                             int(B.size(1)), int(A.size(0)), int(A.size(1)), &HALF_ONE, B.data_ptr(),
-                            CUDA_R_16F, int(B.stride(0)), A.data_ptr(), CUDA_R_16F,
-                            int(A.stride(0)), &HALF_ZERO, C.data_ptr(), CUDA_R_16F,
-                            int(C.stride(0)), CUDA_R_16F, CUBLAS_GEMM_DEFAULT_TENSOR_OP);
-    if (res != CUBLAS_STATUS_SUCCESS) {
+                            HIPBLAS_R_16F, int(B.stride(0)), A.data_ptr(), HIPBLAS_R_16F,
+                            int(A.stride(0)), &HALF_ZERO, C.data_ptr(), HIPBLAS_R_16F,
+                            int(C.stride(0)), HIPBLAS_R_16F, CUBLAS_GEMM_DEFAULT_TENSOR_OP);
+    if (res != HIPBLAS_STATUS_SUCCESS) {
         spdlog::error("CuBLAS error {}", int(res));
         exit(EXIT_FAILURE);
     }

@@ -5,7 +5,7 @@
 #include "utils/cuda_utils.h"
 #include "utils/math_utils.h"
 
-#include <ATen/cuda/CUDAContext.h>
+#include <ATen/cuda/HIPContext.h>
 #include <c10/cuda/CUDAGuard.h>
 #include <c10/cuda/CUDAStream.h>
 #include <nvtx3/nvtx3.hpp>
@@ -112,7 +112,7 @@ public:
         // If running on a Jetson device with unified memory for CPU and GPU we can't use all
         // the available memory for GPU tasks. This way we leave at least half for the CPU,
         // though it's not clear what the ideal split would be.
-        cudaDeviceProp *prop = at::cuda::getCurrentDeviceProperties();
+        hipDeviceProp_t *prop = at::cuda::getCurrentDeviceProperties();
         bool is_unified_memory_device = (prop->major == 5 && prop->minor == 3) ||  // TX1
                                         (prop->major == 6 && prop->minor == 2) ||  // TX2
                                         (prop->major == 7 && prop->minor == 2) ||  // Xavier
@@ -186,18 +186,18 @@ public:
                 float time = std::numeric_limits<float>::max();
                 for (int i = 0; i < 2; ++i) {  // run twice to eliminate outliers
                     using utils::handle_cuda_result;
-                    cudaEvent_t start, stop;
-                    handle_cuda_result(cudaEventCreate(&start));
-                    handle_cuda_result(cudaEventCreate(&stop));
-                    handle_cuda_result(cudaEventRecord(start));
+                    hipEvent_t start, stop;
+                    handle_cuda_result(hipEventCreate(&start));
+                    handle_cuda_result(hipEventCreate(&stop));
+                    handle_cuda_result(hipEventRecord(start));
                     m_module->forward(input);
-                    handle_cuda_result(cudaEventRecord(stop));
-                    handle_cuda_result(cudaEventSynchronize(stop));
+                    handle_cuda_result(hipEventRecord(stop));
+                    handle_cuda_result(hipEventSynchronize(stop));
                     float ms = 0;
-                    handle_cuda_result(cudaEventElapsedTime(&ms, start, stop));
+                    handle_cuda_result(hipEventElapsedTime(&ms, start, stop));
                     time = std::min(time, ms / batch_size);
-                    handle_cuda_result(cudaEventDestroy(start));
-                    handle_cuda_result(cudaEventDestroy(stop));
+                    handle_cuda_result(hipEventDestroy(start));
+                    handle_cuda_result(hipEventDestroy(stop));
                 }
 
                 spdlog::debug("Auto batchsize {}: {}, time per chunk {:8f} ms", m_device,
