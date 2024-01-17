@@ -120,11 +120,6 @@ else()
     set(DORADO_ENABLE_PCH TRUE)
 endif()
 
-if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
-    if((CMAKE_SYSTEM_PROCESSOR MATCHES "^aarch64*|^arm*") AND (${CUDAToolkit_VERSION} VERSION_LESS 11.0))
-        add_compile_definitions(DORADO_TX2)
-    endif()
-endif()
 
 # Bring in spdlog
 add_subdirectory(${DORADO_3RD_PARTY_SOURCE}/spdlog)
