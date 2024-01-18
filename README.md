@@ -21,11 +21,11 @@ git clone https://github.com/HowardHinnant/date.git
 git clone https://github.com/nanoporetech/vbz_compression.git
 And then $ mv vbz_compression hdf_plugins
 
-git clone --recurse-submodules https://github.com/Sygmei/11Zip.git
-And then $mv 11Zip elzip
-
 $cd hdf_plugins/third_party/streamvbyte
 And then $git clone https://github.com/lemire/streamvbyte.git
+
+git clone --recurse-submodules https://github.com/Sygmei/11Zip.git
+And then $mv 11Zip elzip
 
 $cd 3rdparty/ont-minimap2/src/3rdparty
 git clone https://github.com/lh3/minimap2.git
