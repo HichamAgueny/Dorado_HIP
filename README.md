@@ -1,6 +1,6 @@
 # Setup Dorado with rocm support
 
-Here are the necessary modules to setup Dorado on LUMI-G.
+Here is a description how to setup Dorado-HIP on LUMI-G.
 
 ```
 cd /project/project_4650000XX/
