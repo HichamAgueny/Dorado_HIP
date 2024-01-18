@@ -1,11 +1,15 @@
 # Setup Dorado with rocm support
 
-Here are the necessary modules to setup Dorado on LUMI-G
+Here are the necessary modules to setup Dorado on LUMI-G.
+
+```
+git clone https://github.com/HichamAgueny/Dorado_HIP.git
+```
 
 ## Add additional packages
 
 ```
-cd  dorado/3rdparty
+cd  dorado_hip/dorado/3rdparty
 
 git clone https://github.com/samtools/htslib.git
 git clone https://github.com/gabime/spdlog.git
