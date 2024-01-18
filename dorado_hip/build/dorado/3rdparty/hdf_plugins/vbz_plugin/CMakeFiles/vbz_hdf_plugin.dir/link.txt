@@ -1,0 +1,2 @@
+/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ar qc ../../../../lib/libvbz_hdf_plugin.a CMakeFiles/vbz_hdf_plugin.dir/vbz_plugin.cpp.o
+/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ranlib ../../../../lib/libvbz_hdf_plugin.a

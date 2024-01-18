@@ -1,0 +1,2 @@
+/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ar qc ../../../lib/libedlib.a CMakeFiles/edlib.dir/edlib/src/edlib.cpp.o
+/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ranlib ../../../lib/libedlib.a

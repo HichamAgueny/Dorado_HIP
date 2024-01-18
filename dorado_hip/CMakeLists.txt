@@ -67,12 +67,12 @@ else()
     set(DORADO_GPU_BUILD TRUE)
 endif()
 
-find_package(CUDAToolkit QUIET)
+#find_package(CUDAToolkit QUIET)
 
-if(${CUDAToolkit_FOUND})
-  file(REAL_PATH ${CUDAToolkit_TARGET_DIR} CUDAToolkit_REAL_DIR)
-  message(STATUS "Found CUDA ${CUDAToolkit_VERSION} (${CUDAToolkit_TARGET_DIR} -> ${CUDAToolkit_REAL_DIR})")
-endif()
+#if(${CUDAToolkit_FOUND})
+#  file(REAL_PATH ${CUDAToolkit_TARGET_DIR} CUDAToolkit_REAL_DIR)
+#  message(STATUS "Found CUDA ${CUDAToolkit_VERSION} (${CUDAToolkit_TARGET_DIR} -> ${CUDAToolkit_REAL_DIR})")
+#endif()
 
 include(cmake/DoradoVersion.cmake)
 include(cmake/UpdateSubmodules.cmake)
@@ -81,7 +81,7 @@ include(cmake/SharedLibHelpers.cmake)
 
 include(cmake/HDF5.cmake)
 include(cmake/VbzPlugin.cmake)
-include(cmake/Koi.cmake)
+#include(cmake/Koi.cmake)
 include(cmake/Pod5.cmake)
 include(cmake/Torch.cmake)
 include(cmake/OpenSSL.cmake)
@@ -121,9 +121,9 @@ else()
 endif()
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
-    if((CMAKE_SYSTEM_PROCESSOR MATCHES "^aarch64*|^arm*") AND (${CUDAToolkit_VERSION} VERSION_LESS 11.0))
+	#    if((CMAKE_SYSTEM_PROCESSOR MATCHES "^aarch64*|^arm*") AND (${CUDAToolkit_VERSION} VERSION_LESS 11.0))
         add_compile_definitions(DORADO_TX2)
-    endif()
+	#endif()
 endif()
 
 # Bring in spdlog
@@ -164,11 +164,11 @@ add_subdirectory(dorado/models)
 add_subdirectory(dorado/basecall)
 add_subdirectory(dorado/modbase)
 
-if("${CUDA_VERSION}" STREQUAL "")
-  set(CUDA_VERSION ${CUDAToolkit_VERSION})
-else()
-  message(STATUS "CUDA VERSION ALREADY SET TO ${CUDA_VERSION}")
-endif()
+#if("${CUDA_VERSION}" STREQUAL "")
+#  set(CUDA_VERSION ${CUDAToolkit_VERSION})
+#else()
+#  message(STATUS "CUDA VERSION ALREADY SET TO ${CUDA_VERSION}")
+#endif()
 
 configure_file(dorado/Version.h.in dorado/Version.h)
 
@@ -381,18 +381,18 @@ endif()
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     # CUDA toolkit DLLs we depend on:
     set(VERSIONED_CUDA_LIBS
-        libcublas*.so.*
-        libcudart*.so.*
+        libhipblas*.so.*
+        libhiprt*.so.*
         libnvrtc*.so.*
         libnvToolsExt*.so.*
     )
 
     if(CMAKE_SYSTEM_PROCESSOR STREQUAL "aarch64")
         list(APPEND VERSIONED_CUDA_LIBS
-            "*cusparse.so*"
-            "*curand.so*"
-            "*cusolver.so*"
-            "*cufft.so*"
+            "*hipsparse.so*"
+            "*hiprand.so*"
+            "*hipsolver.so*"
+            "*hipfft.so*"
         )
     endif()
 

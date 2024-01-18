@@ -1,0 +1,2 @@
+/opt/cray/pe/cce/16.0.1/binutils/x86_64/x86_64-pc-linux-gnu/bin/ar qc libstreamvbyte.a CMakeFiles/streamvbyte.dir/src/streamvbyte_encode.c.o CMakeFiles/streamvbyte.dir/src/streamvbyte_decode.c.o CMakeFiles/streamvbyte.dir/src/streamvbyte_zigzag.c.o CMakeFiles/streamvbyte.dir/src/streamvbytedelta_encode.c.o CMakeFiles/streamvbyte.dir/src/streamvbytedelta_decode.c.o CMakeFiles/streamvbyte.dir/src/streamvbyte_0124_encode.c.o CMakeFiles/streamvbyte.dir/src/streamvbyte_0124_decode.c.o
+/opt/cray/pe/cce/16.0.1/binutils/x86_64/x86_64-pc-linux-gnu/bin/ranlib libstreamvbyte.a
