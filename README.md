@@ -24,6 +24,7 @@ And then $ mv vbz_compression hdf_plugins
 $cd hdf_plugins/third_party/streamvbyte
 And then $git clone https://github.com/lemire/streamvbyte.git
 
+$cd dorado_hip/dorado/3rdparty
 git clone --recurse-submodules https://github.com/Sygmei/11Zip.git
 And then $mv 11Zip elzip
 
