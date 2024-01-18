@@ -22,6 +22,7 @@ git clone https://github.com/nanoporetech/vbz_compression.git
 And then $ mv vbz_compression hdf_plugins
 
 $cd hdf_plugins/third_party/streamvbyte
+$rm -rf streamvbyte
 And then $git clone https://github.com/lemire/streamvbyte.git
 
 $cd dorado_hip/dorado/3rdparty
