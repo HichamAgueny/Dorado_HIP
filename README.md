@@ -3,7 +3,44 @@
 Here are the necessary modules to setup Dorado on LUMI-G.
 
 ```
+cd /project/project_4650000XX/
 git clone https://github.com/HichamAgueny/Dorado_HIP.git
+```
+
+## Setup PyTorch-rocm
+
+In a virtual environment 
+```
+cd /project/project_4650000XX/
+ml cray-python/3.9.12.1
+module use /pfs/lustrep2/projappl/project_462000125/samantao-public/mymodules
+ml rocm/5.7.1
+
+python -m venv PyT2.0.1_rocm5.7_pyt3.9.12.1
+source PyT2.0.1_rocm5.7_pyt3.9.12.1/bin/activate
+pip install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/rocm5.7/
+
+deactivate
+```
+
+## Build aws-ofi-rccl (communication between GPUs) plugin with EasyBuild
+
+**Step 1:** Specify the path for EasyBuild
+```
+$ export EBU_USER_PREFIX=/project/project_4650000XX/EasyBuild
+```
+
+**Step 2:** Load necessary modules
+```
+$ module load LUMI/22.12 partition/G
+$ module load rocm/5.3.2
+$ module load EasyBuild-user
+And if it is needed: export PYTHONIOENCODING=utf-8
+```
+
+**Step 3:** Install `aws-ofi-rccl` plugin
+```
+$ eb aws-ofi-rccl-1.4.0-cpeGNU-22.12-rocm-5.3.2.eb -r
 ```
 
 ## Add additional packages
@@ -55,7 +92,7 @@ module use /pfs/lustrep2/projappl/project_462000125/samantao-public/mymodules
 ml rocm/5.7.1
 ```
 ```
-source /project/project_465000096/hich/XDorado_hip/PyT2.0.1_rocm5.7_pyt3.9.12.1/bin/activate
+source /project/project_4650000XX/PyT2.0.1_rocm5.7_pyt3.9.12.1/bin/activate
 ```
 ```
 export LD_LIBRARY_PATH=/opt/cray/pe/gcc/10.3.0/snos/lib64:$LD_LIBRARY_PATH
