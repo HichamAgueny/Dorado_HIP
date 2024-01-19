@@ -100,6 +100,16 @@ export LD_LIBRARY_PATH=/opt/cray/pe/gcc/10.3.0/snos/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib:LD_LIBRARY_PATH
 ```
 
+```
+$cd Dorado_HIP/dorado_hip/build/htslib_build/htslib
+$git submodule update --init --recursive
+$./configure
+```
+
+Specify the path of TORCH in `cmake/Torch.cmake`: 
+```
+set(DORADO_LIBTORCH_DIR /project/project_4650000XX/PyT2.3.0_rocm5.7_pyt3.9.12.1/lib/python3.9/site-packages)
+```
 **ATen** should be here: `ATEN_INCLUDE_DIR=PyT2.3.0_rocm5.7_pyt3.9.12.1/lib/python3.9/site-packages/torch/include/ATen`
 
 ### Configure & Build
