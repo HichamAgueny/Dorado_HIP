@@ -13,6 +13,19 @@ if (NOT MULTI_CONFIG)
 message(STATUS "Build type: " ${CMAKE_BUILD_TYPE})
 endif()
 
+function(exit_cmake)
+  if(UNIX)
+    set(KILL_COMMAND "killall")
+    execute_process(COMMAND ${KILL_COMMAND} -9 cmake
+      WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
+    )
+  else()
+    set(KILL_COMMAND "taskkill")
+    execute_process(COMMAND ${KILL_COMMAND} /IM cmake.exe /F
+      WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
+    )
+  endif()
+endfunction()
 
 if(WIN32)
   # all third parties are release builds, so we must match the windows runtime
