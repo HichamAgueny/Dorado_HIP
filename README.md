@@ -6,6 +6,44 @@ Here is a description how to setup Dorado-HIP on LUMI-G.
 cd /project/project_4650000XX/
 git clone https://github.com/HichamAgueny/Dorado_HIP.git
 ```
+## Add additional packages
+
+```
+cd Dorado_HIP/dorado_hip
+
+git clone https://github.com/ROCm/hipify_torch.git
+
+cd  Dorado_HIP/dorado_hip/dorado/3rdparty
+
+git clone https://github.com/samtools/htslib.git
+git clone https://github.com/gabime/spdlog.git
+git clone https://github.com/Sygmei/11Zip.git
+git clone https://github.com/nanoporetech/ont-minimap2.git
+git clone https://github.com/Martinsos/edlib.git
+git clone https://github.com/HowardHinnant/date.git
+git clone https://github.com/yhirose/cpp-httplib.git
+git clone https://github.com/NVIDIA/NVTX.git
+git clone https://github.com/BlueBrain/HighFive.git
+gite clone https://github.com/bloomen/cxxpool.git
+git clone https://github.com/p-ranav/indicators.git
+git clone https://github.com/ToruNiina/toml11.git
+
+git clone https://github.com/nanoporetech/vbz_compression.git
+And then $ mv vbz_compression hdf_plugins
+
+$cd hdf_plugins/third_party/streamvbyte
+$rm -rf streamvbyte
+And then $git clone https://github.com/lemire/streamvbyte.git
+
+$cd dorado_hip/dorado/3rdparty
+git clone --recurse-submodules https://github.com/Sygmei/11Zip.git
+And then $mv 11Zip elzip
+
+$cd 3rdparty/ont-minimap2/src/3rdparty
+git clone https://github.com/lh3/minimap2.git
+git clone https://github.com/GerHobbelt/pthread-win32.git
+git clone https://github.com/zlib-ng/zlib-ng.git
+```
 
 ## Setup PyTorch-rocm
 
@@ -41,41 +79,6 @@ And if it is needed: export PYTHONIOENCODING=utf-8
 **Step 3:** Install `aws-ofi-rccl` plugin
 ```
 $ eb aws-ofi-rccl-1.4.0-cpeGNU-22.12-rocm-5.3.2.eb -r
-```
-
-## Add additional packages
-
-```
-cd  dorado_hip/dorado/3rdparty
-
-git clone https://github.com/samtools/htslib.git
-git clone https://github.com/gabime/spdlog.git
-git clone https://github.com/Sygmei/11Zip.git
-git clone https://github.com/nanoporetech/ont-minimap2.git
-git clone https://github.com/Martinsos/edlib.git
-git clone https://github.com/HowardHinnant/date.git
-git clone https://github.com/yhirose/cpp-httplib.git
-git clone https://github.com/NVIDIA/NVTX.git
-git clone https://github.com/BlueBrain/HighFive.git
-gite clone https://github.com/bloomen/cxxpool.git
-git clone https://github.com/p-ranav/indicators.git
-git clone https://github.com/ToruNiina/toml11.git
-
-git clone https://github.com/nanoporetech/vbz_compression.git
-And then $ mv vbz_compression hdf_plugins
-
-$cd hdf_plugins/third_party/streamvbyte
-$rm -rf streamvbyte
-And then $git clone https://github.com/lemire/streamvbyte.git
-
-$cd dorado_hip/dorado/3rdparty
-git clone --recurse-submodules https://github.com/Sygmei/11Zip.git
-And then $mv 11Zip elzip
-
-$cd 3rdparty/ont-minimap2/src/3rdparty
-git clone https://github.com/lh3/minimap2.git
-git clone https://github.com/GerHobbelt/pthread-win32.git
-git clone https://github.com/zlib-ng/zlib-ng.git
 ```
 
 ## Load modules
