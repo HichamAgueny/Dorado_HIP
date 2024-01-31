@@ -54,6 +54,12 @@ git clone https://github.com/Sygmei/11Zip.git
 git clone https://github.com/nanoporetech/ont-minimap2.git
 git clone https://github.com/Martinsos/edlib.git
 git clone https://github.com/HowardHinnant/date.git
+git clone https://github.com/yhirose/cpp-httplib.git
+git clone https://github.com/NVIDIA/NVTX.git
+git clone https://github.com/BlueBrain/HighFive.git
+gite clone https://github.com/bloomen/cxxpool.git
+git clone https://github.com/p-ranav/indicators.git
+git clone https://github.com/ToruNiina/toml11.git
 
 git clone https://github.com/nanoporetech/vbz_compression.git
 And then $ mv vbz_compression hdf_plugins
