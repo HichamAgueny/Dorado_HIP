@@ -1,2 +1,0 @@
-/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ar qc libdorado_pch.a CMakeFiles/dorado_pch.dir/precompiled.cpp.o
-/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ranlib libdorado_pch.a

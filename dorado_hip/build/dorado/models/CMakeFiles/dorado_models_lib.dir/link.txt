@@ -1,2 +1,0 @@
-/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ar qc libdorado_models_lib.a CMakeFiles/dorado_models_lib.dir/kits.cpp.o CMakeFiles/dorado_models_lib.dir/metadata.cpp.o CMakeFiles/dorado_models_lib.dir/models.cpp.o
-/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ranlib libdorado_models_lib.a

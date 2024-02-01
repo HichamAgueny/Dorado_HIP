@@ -1,2 +1,0 @@
-/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ar qc libdorado_modbase.a CMakeFiles/dorado_modbase.dir/ModBaseContext.cpp.o CMakeFiles/dorado_modbase.dir/ModbaseEncoder.cpp.o CMakeFiles/dorado_modbase.dir/ModBaseModel.cpp.o CMakeFiles/dorado_modbase.dir/ModBaseModelConfig.cpp.o CMakeFiles/dorado_modbase.dir/ModBaseRunner.cpp.o CMakeFiles/dorado_modbase.dir/ModbaseScaler.cpp.o CMakeFiles/dorado_modbase.dir/MotifMatcher.cpp.o
-/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/bin/llvm-ranlib libdorado_modbase.a

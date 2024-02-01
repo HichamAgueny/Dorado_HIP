@@ -1,1 +1,0 @@
-/opt/cray/pe/craype/2.7.23/bin/CC  -Wall -Wextra -pedantic -O3 -DNDEBUG -dynamic "CMakeFiles/edlib-aligner.dir/apps/aligner/aligner.cpp.o" -o ../../../bin/edlib-aligner  ../../../lib/libedlib.a 

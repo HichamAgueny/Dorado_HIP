@@ -1,1 +1,0 @@
-cmd='/pfs/lustrep1/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake;-DCMAKE_INSTALL_PREFIX=/project/project_465000096/hich/Dorado_HIP/dorado_hip/build/streamvbyte_lib/;-DSTREAMVBYTE_DISABLE_NATIVE=ON;-DSTD_FLAGS="-std=c99";-GUnix Makefiles;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'

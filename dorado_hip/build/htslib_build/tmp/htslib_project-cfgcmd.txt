@@ -1,1 +1,0 @@
-cmd='/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/autoheader;COMMAND;autoreconf;--install;COMMAND;./configure;--disable-bz2;--disable-lzma;--disable-libcurl;--disable-s3;--disable-gcs'
