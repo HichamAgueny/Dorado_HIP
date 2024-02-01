@@ -1,0 +1,947 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 5.14.21-150400.24.81_12.0.75-cray_shasta_c - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/cray/pe/craype/2.7.23/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/3.27.7/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/cray/pe/craype/2.7.23/bin/CC 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/3.27.7/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4"
+      binary: "/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4'
+        
+        Run Build Command(s): /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake -E env VERBOSE=1 /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake -f Makefile cmTC_fd7f2/fast
+        /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake  -f CMakeFiles/cmTC_fd7f2.dir/build.make CMakeFiles/cmTC_fd7f2.dir/build
+        gmake[1]: Entering directory '/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4'
+        Building C object CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o
+        /opt/cray/pe/craype/2.7.23/bin/cc   -v -MD -MT CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -c /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Cray clang version 16.0.1  (6d4824324d375100ba18ca639dfc956fe6546d06)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin
+        Found candidate GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0
+        Selected GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found HIP installation: /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1, version 5.7.31921
+         (in-process)
+         "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/clang-16" -cc1 -triple x86_64-unknown-linux-gnu -mllvm -cray-omp-opt-fork-call -mllvm -cray-omp-parallel-opt-call -mllvm -cray-openmp-rename-outlined -fcray-gpu -flocal-restrict -mllvm -cray-enhanced-asm=1 -fenhanced-asm=1 -mllvm -cray-enhanced-ir=1 -fenhanced-ir=1 -fomp-local-offload-table -ffortran -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu znver3 -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4 -resource-dir /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16 -dependency-file CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include -isystem /opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs -D __CRAY_X86_TRENTO -D __CRAY_AMD_GFX90A -D __CRAYXT_COMPUTE_LINUX_TARGET -I /opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include -I /opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -I/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -internal-isystem /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../x86_64-suse-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4 -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -x c /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../x86_64-suse-linux/include"
+        ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include
+         /opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include
+         /opt/cray/pe/dsmml/0.2.2/dsmml//include
+         /opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include
+         /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include
+         /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include
+         /opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_fd7f2
+        /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd7f2.dir/link.txt --verbose=1
+        /opt/cray/pe/craype/2.7.23/bin/cc  -v CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -o cmTC_fd7f2 
+        Cray clang version 16.0.1  (6d4824324d375100ba18ca639dfc956fe6546d06)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin
+        Found candidate GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0
+        Selected GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found HIP installation: /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1, version 5.7.31921
+         "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin/ld.lld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fd7f2 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o -L/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib -L/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib -L/opt/cray/pe/mpich/8.1.27/gtl/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../ -L/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64 -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu -L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0 -L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -plugin-opt=mcpu=znver3 -plugin-opt=lto=0 -plugin-opt=defaults=cray -plugin-opt=mllvm=-cray-math-precision=none -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64 -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm -L/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib -rpath=/opt/cray/pe/cce/16.0.1/cce/x86_64/lib CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -lxpmem --as-needed -lsci_cray_mpi --no-as-needed --as-needed -lsci_cray --no-as-needed -ldl --as-needed -lmpi_cray --no-as-needed -lmpi_gtl_hsa --as-needed -ldsmml --no-as-needed --as-needed -lstdc++ --no-as-needed --as-needed -lpgas-shmem --no-as-needed -lquadmath -lmodules -lfi -lcraymath -lf -lu -lcsup --as-needed -lpthread -latomic --no-as-needed --as-needed -lm --no-as-needed --disable-new-dtags /opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu -rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so -lunwind --no-as-needed -lc /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu -rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so -lunwind --no-as-needed /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o /usr/lib/../lib64/crtn.o
+        gmake[1]: Leaving directory '/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include]
+          add: [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include]
+          add: [/opt/cray/pe/dsmml/0.2.2/dsmml//include]
+          add: [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include]
+          add: [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include]
+          add: [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include]
+          add: [/opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include] ==> [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include]
+        collapse include dir [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include] ==> [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include]
+        collapse include dir [/opt/cray/pe/dsmml/0.2.2/dsmml//include] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/include]
+        collapse include dir [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include] ==> [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include]
+        collapse include dir [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include] ==> [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include]
+        collapse include dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include] ==> [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include]
+        collapse include dir [/opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs] ==> [/opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include;/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include;/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include;/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include;/opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4']
+        ignore line: []
+        ignore line: [Run Build Command(s): /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake -E env VERBOSE=1 /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake -f Makefile cmTC_fd7f2/fast]
+        ignore line: [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake  -f CMakeFiles/cmTC_fd7f2.dir/build.make CMakeFiles/cmTC_fd7f2.dir/build]
+        ignore line: [gmake[1]: Entering directory '/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4']
+        ignore line: [Building C object CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/opt/cray/pe/craype/2.7.23/bin/cc   -v -MD -MT CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -c /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Cray clang version 16.0.1  (6d4824324d375100ba18ca639dfc956fe6546d06)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin]
+        ignore line: [Found candidate GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        ignore line: [Selected GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found HIP installation: /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1  version 5.7.31921]
+        ignore line: [ (in-process)]
+        ignore line: [ "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/clang-16" -cc1 -triple x86_64-unknown-linux-gnu -mllvm -cray-omp-opt-fork-call -mllvm -cray-omp-parallel-opt-call -mllvm -cray-openmp-rename-outlined -fcray-gpu -flocal-restrict -mllvm -cray-enhanced-asm=1 -fenhanced-asm=1 -mllvm -cray-enhanced-ir=1 -fenhanced-ir=1 -fomp-local-offload-table -ffortran -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu znver3 -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4 -resource-dir /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16 -dependency-file CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include -isystem /opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs -D __CRAY_X86_TRENTO -D __CRAY_AMD_GFX90A -D __CRAYXT_COMPUTE_LINUX_TARGET -I /opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include -I /opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -I/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -internal-isystem /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../x86_64-suse-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-labrs4 -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -x c /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../x86_64-suse-linux/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include]
+        ignore line: [ /opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include]
+        ignore line: [ /opt/cray/pe/dsmml/0.2.2/dsmml//include]
+        ignore line: [ /opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include]
+        ignore line: [ /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include]
+        ignore line: [ /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include]
+        ignore line: [ /opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_fd7f2]
+        ignore line: [/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd7f2.dir/link.txt --verbose=1]
+        ignore line: [/opt/cray/pe/craype/2.7.23/bin/cc  -v CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -o cmTC_fd7f2 ]
+        ignore line: [Cray clang version 16.0.1  (6d4824324d375100ba18ca639dfc956fe6546d06)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin]
+        ignore line: [Found candidate GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        ignore line: [Selected GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found HIP installation: /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1  version 5.7.31921]
+        link line: [ "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin/ld.lld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fd7f2 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o -L/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib -L/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib -L/opt/cray/pe/mpich/8.1.27/gtl/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../ -L/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64 -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu -L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0 -L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -plugin-opt=mcpu=znver3 -plugin-opt=lto=0 -plugin-opt=defaults=cray -plugin-opt=mllvm=-cray-math-precision=none -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64 -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm -L/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib -rpath=/opt/cray/pe/cce/16.0.1/cce/x86_64/lib CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o -lxpmem --as-needed -lsci_cray_mpi --no-as-needed --as-needed -lsci_cray --no-as-needed -ldl --as-needed -lmpi_cray --no-as-needed -lmpi_gtl_hsa --as-needed -ldsmml --no-as-needed --as-needed -lstdc++ --no-as-needed --as-needed -lpgas-shmem --no-as-needed -lquadmath -lmodules -lfi -lcraymath -lf -lu -lcsup --as-needed -lpthread -latomic --no-as-needed --as-needed -lm --no-as-needed --disable-new-dtags /opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu -rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so -lunwind --no-as-needed -lc /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu -rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so -lunwind --no-as-needed /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o /usr/lib/../lib64/crtn.o]
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin/ld.lld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_fd7f2] ==> ignore
+          arg [/usr/lib/../lib64/crt1.o] ==> obj [/usr/lib/../lib64/crt1.o]
+          arg [/usr/lib/../lib64/crti.o] ==> obj [/usr/lib/../lib64/crti.o]
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o] ==> obj [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o]
+          arg [-L/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib] ==> dir [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib]
+          arg [-L/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib] ==> dir [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib]
+          arg [-L/opt/cray/pe/mpich/8.1.27/gtl/lib] ==> dir [/opt/cray/pe/mpich/8.1.27/gtl/lib]
+          arg [-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib]
+          arg [-L/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../] ==> dir [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../]
+          arg [-L/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64] ==> dir [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64]
+          arg [-L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu] ==> dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu]
+          arg [-L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0] ==> dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+          arg [-L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64] ==> dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-plugin-opt=mcpu=znver3] ==> ignore
+          arg [-plugin-opt=lto=0] ==> ignore
+          arg [-plugin-opt=defaults=cray] ==> ignore
+          arg [-plugin-opt=mllvm=-cray-math-precision=none] ==> ignore
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm]
+          arg [-L/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib] ==> dir [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib]
+          arg [-rpath=/opt/cray/pe/cce/16.0.1/cce/x86_64/lib] ==> ignore
+          arg [CMakeFiles/cmTC_fd7f2.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lxpmem] ==> lib [xpmem]
+          arg [--as-needed] ==> ignore
+          arg [-lsci_cray_mpi] ==> lib [sci_cray_mpi]
+          arg [--no-as-needed] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lsci_cray] ==> lib [sci_cray]
+          arg [--no-as-needed] ==> ignore
+          arg [-ldl] ==> lib [dl]
+          arg [--as-needed] ==> ignore
+          arg [-lmpi_cray] ==> lib [mpi_cray]
+          arg [--no-as-needed] ==> ignore
+          arg [-lmpi_gtl_hsa] ==> lib [mpi_gtl_hsa]
+          arg [--as-needed] ==> ignore
+          arg [-ldsmml] ==> lib [dsmml]
+          arg [--no-as-needed] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [--no-as-needed] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lpgas-shmem] ==> lib [pgas-shmem]
+          arg [--no-as-needed] ==> ignore
+          arg [-lquadmath] ==> lib [quadmath]
+          arg [-lmodules] ==> lib [modules]
+          arg [-lfi] ==> lib [fi]
+          arg [-lcraymath] ==> lib [craymath]
+          arg [-lf] ==> lib [f]
+          arg [-lu] ==> lib [u]
+          arg [-lcsup] ==> lib [csup]
+          arg [--as-needed] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-latomic] ==> lib [atomic]
+          arg [--no-as-needed] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lm] ==> lib [m]
+          arg [--no-as-needed] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o] ==> obj [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o]
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a] ==> lib [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a]
+          arg [--as-needed] ==> ignore
+          arg [-L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+          arg [-rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> ignore
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so] ==> ignore
+          arg [-lunwind] ==> lib [unwind]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a] ==> lib [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a]
+          arg [--as-needed] ==> ignore
+          arg [-L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+          arg [-rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> ignore
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so] ==> ignore
+          arg [-lunwind] ==> lib [unwind]
+          arg [--no-as-needed] ==> ignore
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o] ==> obj [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o]
+          arg [/usr/lib/../lib64/crtn.o] ==> obj [/usr/lib/../lib64/crtn.o]
+        remove lib [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a]
+        remove lib [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a]
+        collapse obj [/usr/lib/../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib] ==> [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib]
+        collapse library dir [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib] ==> [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib]
+        collapse library dir [/opt/cray/pe/mpich/8.1.27/gtl/lib] ==> [/opt/cray/pe/mpich/8.1.27/gtl/lib]
+        collapse library dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/lib]
+        collapse library dir [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../] ==> [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib]
+        collapse library dir [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64] ==> [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64]
+        collapse library dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu] ==> [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0] ==> [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        collapse library dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64] ==> [/opt/cray/pe/gcc/10.3.0/snos/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm]
+        collapse library dir [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib] ==> [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib]
+        collapse library dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+        implicit libs: [xpmem;sci_cray_mpi;sci_cray;dl;mpi_cray;mpi_gtl_hsa;dsmml;stdc++;pgas-shmem;quadmath;modules;fi;craymath;f;u;csup;pthread;atomic;m;unwind;c;unwind]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o;/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o;/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o;/usr/lib64/crtn.o]
+        implicit dirs: [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib;/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib;/opt/cray/pe/mpich/8.1.27/gtl/lib;/opt/cray/pe/dsmml/0.2.2/dsmml/lib;/opt/cray/pe/cce/16.0.1/cce/x86_64/lib;/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64;/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu;/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0;/opt/cray/pe/gcc/10.3.0/snos/lib64;/lib64;/usr/lib64;/lib;/usr/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm;/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6"
+      binary: "/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6'
+        
+        Run Build Command(s): /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake -E env VERBOSE=1 /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake -f Makefile cmTC_e303d/fast
+        /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake  -f CMakeFiles/cmTC_e303d.dir/build.make CMakeFiles/cmTC_e303d.dir/build
+        gmake[1]: Entering directory '/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6'
+        Building CXX object CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/cray/pe/craype/2.7.23/bin/CC   -v -MD -MT CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -c /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Cray clang version 16.0.1  (6d4824324d375100ba18ca639dfc956fe6546d06)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin
+        Found candidate GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0
+        Selected GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found HIP installation: /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1, version 5.7.31921
+         (in-process)
+         "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/clang-16" -cc1 -triple x86_64-unknown-linux-gnu -mllvm -cray-omp-opt-fork-call -mllvm -cray-omp-parallel-opt-call -mllvm -cray-openmp-rename-outlined -fcray-gpu -flocal-restrict -mllvm -cray-enhanced-asm=1 -fenhanced-asm=1 -mllvm -cray-enhanced-ir=1 -fenhanced-ir=1 -fomp-local-offload-table -ffortran -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu znver3 -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6 -resource-dir /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16 -dependency-file CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include -isystem /opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs -D __CRAY_X86_TRENTO -D __CRAY_AMD_GFX90A -D __CRAYXT_COMPUTE_LINUX_TARGET -I /opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include -I /opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -I/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++ -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/x86_64-suse-linux -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/backward -internal-isystem /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../x86_64-suse-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6 -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../x86_64-suse-linux/include"
+        ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include
+         /opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include
+         /opt/cray/pe/dsmml/0.2.2/dsmml//include
+         /opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include
+         /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include
+         /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include
+         /opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include
+         /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include
+         /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++
+         /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/x86_64-suse-linux
+         /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/backward
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_e303d
+        /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e303d.dir/link.txt --verbose=1
+        /opt/cray/pe/craype/2.7.23/bin/CC  -v CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e303d 
+        Cray clang version 16.0.1  (6d4824324d375100ba18ca639dfc956fe6546d06)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin
+        Found candidate GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0
+        Selected GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found HIP installation: /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1, version 5.7.31921
+         "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin/ld.lld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e303d /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o -L/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib -L/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib -L/opt/cray/pe/mpich/8.1.27/gtl/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../ -L/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64 -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu -L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0 -L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -plugin-opt=mcpu=znver3 -plugin-opt=lto=0 -plugin-opt=defaults=cray -plugin-opt=mllvm=-cray-math-precision=none -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64 -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm -L/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib -rpath=/opt/cray/pe/cce/16.0.1/cce/x86_64/lib CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -lxpmem --as-needed -lsci_cray_mpi --no-as-needed --as-needed -lsci_cray --no-as-needed -ldl --as-needed -lmpi_cray --no-as-needed -lmpi_gtl_hsa --as-needed -ldsmml --no-as-needed --as-needed -lstdc++ --no-as-needed --as-needed -lpgas-shmem --no-as-needed -lquadmath -lmodules -lfi -lcraymath -lf -lu -lcsup --as-needed -lpthread -latomic --no-as-needed --as-needed -lm --no-as-needed --disable-new-dtags /opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o -lstdc++ -lm /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu -rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so -lunwind --no-as-needed -lc /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu -rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so -lunwind --no-as-needed /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o /usr/lib/../lib64/crtn.o
+        gmake[1]: Leaving directory '/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include]
+          add: [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include]
+          add: [/opt/cray/pe/dsmml/0.2.2/dsmml//include]
+          add: [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include]
+          add: [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include]
+          add: [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include]
+          add: [/opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include]
+          add: [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include]
+          add: [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++]
+          add: [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/x86_64-suse-linux]
+          add: [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/backward]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include] ==> [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include]
+        collapse include dir [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include] ==> [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include]
+        collapse include dir [/opt/cray/pe/dsmml/0.2.2/dsmml//include] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/include]
+        collapse include dir [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include] ==> [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include]
+        collapse include dir [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include] ==> [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include]
+        collapse include dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include] ==> [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include]
+        collapse include dir [/opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs] ==> [/opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include]
+        collapse include dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include]
+        collapse include dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++] ==> [/opt/cray/pe/gcc/10.3.0/snos/include/g++]
+        collapse include dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/x86_64-suse-linux] ==> [/opt/cray/pe/gcc/10.3.0/snos/include/g++/x86_64-suse-linux]
+        collapse include dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/backward] ==> [/opt/cray/pe/gcc/10.3.0/snos/include/g++/backward]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include;/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include;/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include;/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include;/opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include;/opt/cray/pe/gcc/10.3.0/snos/include/g++;/opt/cray/pe/gcc/10.3.0/snos/include/g++/x86_64-suse-linux;/opt/cray/pe/gcc/10.3.0/snos/include/g++/backward;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6']
+        ignore line: []
+        ignore line: [Run Build Command(s): /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake -E env VERBOSE=1 /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake -f Makefile cmTC_e303d/fast]
+        ignore line: [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake  -f CMakeFiles/cmTC_e303d.dir/build.make CMakeFiles/cmTC_e303d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/cray/pe/craype/2.7.23/bin/CC   -v -MD -MT CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -c /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Cray clang version 16.0.1  (6d4824324d375100ba18ca639dfc956fe6546d06)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin]
+        ignore line: [Found candidate GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        ignore line: [Selected GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found HIP installation: /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1  version 5.7.31921]
+        ignore line: [ (in-process)]
+        ignore line: [ "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/clang-16" -cc1 -triple x86_64-unknown-linux-gnu -mllvm -cray-omp-opt-fork-call -mllvm -cray-omp-parallel-opt-call -mllvm -cray-openmp-rename-outlined -fcray-gpu -flocal-restrict -mllvm -cray-enhanced-asm=1 -fenhanced-asm=1 -mllvm -cray-enhanced-ir=1 -fenhanced-ir=1 -fomp-local-offload-table -ffortran -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu znver3 -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6 -resource-dir /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16 -dependency-file CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include -isystem /opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs -D __CRAY_X86_TRENTO -D __CRAY_AMD_GFX90A -D __CRAYXT_COMPUTE_LINUX_TARGET -I /opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include -I /opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -I /opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -I/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -I/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -c-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include -cxx-isystem /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++ -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/x86_64-suse-linux -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/backward -internal-isystem /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../x86_64-suse-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-osOAU6 -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../x86_64-suse-linux/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/include]
+        ignore line: [ /opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/include]
+        ignore line: [ /opt/cray/pe/dsmml/0.2.2/dsmml//include]
+        ignore line: [ /opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/include]
+        ignore line: [ /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/include]
+        ignore line: [ /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/include]
+        ignore line: [ /opt/cray/pe/cce/16.0.1/cce/x86_64/include/craylibs]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocthrust/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsparse/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocsolver/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocrand/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocprim/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocfft/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocblas/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/rocalution/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/opencl/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/oam/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/miopen/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipsparse/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hiprand/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipcub/include]
+        ignore line: [ /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hipblas/include]
+        ignore line: [ /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++]
+        ignore line: [ /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/x86_64-suse-linux]
+        ignore line: [ /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../include/g++/backward]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_e303d]
+        ignore line: [/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e303d.dir/link.txt --verbose=1]
+        ignore line: [/opt/cray/pe/craype/2.7.23/bin/CC  -v CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e303d ]
+        ignore line: [Cray clang version 16.0.1  (6d4824324d375100ba18ca639dfc956fe6546d06)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin]
+        ignore line: [Found candidate GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        ignore line: [Selected GCC installation: /opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found HIP installation: /pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1  version 5.7.31921]
+        link line: [ "/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin/ld.lld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e303d /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o -L/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib -L/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib -L/opt/cray/pe/mpich/8.1.27/gtl/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../ -L/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64 -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu -L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0 -L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -plugin-opt=mcpu=znver3 -plugin-opt=lto=0 -plugin-opt=defaults=cray -plugin-opt=mllvm=-cray-math-precision=none -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64 -L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm -L/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib -rpath=/opt/cray/pe/cce/16.0.1/cce/x86_64/lib CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o -lxpmem --as-needed -lsci_cray_mpi --no-as-needed --as-needed -lsci_cray --no-as-needed -ldl --as-needed -lmpi_cray --no-as-needed -lmpi_gtl_hsa --as-needed -ldsmml --no-as-needed --as-needed -lstdc++ --no-as-needed --as-needed -lpgas-shmem --no-as-needed -lquadmath -lmodules -lfi -lcraymath -lf -lu -lcsup --as-needed -lpthread -latomic --no-as-needed --as-needed -lm --no-as-needed --disable-new-dtags /opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o -lstdc++ -lm /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu -rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so -lunwind --no-as-needed -lc /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu -rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so -lunwind --no-as-needed /opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o /usr/lib/../lib64/crtn.o]
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/share/../bin/ld.lld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e303d] ==> ignore
+          arg [/usr/lib/../lib64/crt1.o] ==> obj [/usr/lib/../lib64/crt1.o]
+          arg [/usr/lib/../lib64/crti.o] ==> obj [/usr/lib/../lib64/crti.o]
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o] ==> obj [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o]
+          arg [-L/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib] ==> dir [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib]
+          arg [-L/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib] ==> dir [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib]
+          arg [-L/opt/cray/pe/mpich/8.1.27/gtl/lib] ==> dir [/opt/cray/pe/mpich/8.1.27/gtl/lib]
+          arg [-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib]
+          arg [-L/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../] ==> dir [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../]
+          arg [-L/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64] ==> dir [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64]
+          arg [-L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu] ==> dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu]
+          arg [-L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0] ==> dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+          arg [-L/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64] ==> dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-plugin-opt=mcpu=znver3] ==> ignore
+          arg [-plugin-opt=lto=0] ==> ignore
+          arg [-plugin-opt=defaults=cray] ==> ignore
+          arg [-plugin-opt=mllvm=-cray-math-precision=none] ==> ignore
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64]
+          arg [-L/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm] ==> dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm]
+          arg [-L/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib] ==> dir [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib]
+          arg [-rpath=/opt/cray/pe/cce/16.0.1/cce/x86_64/lib] ==> ignore
+          arg [CMakeFiles/cmTC_e303d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lxpmem] ==> lib [xpmem]
+          arg [--as-needed] ==> ignore
+          arg [-lsci_cray_mpi] ==> lib [sci_cray_mpi]
+          arg [--no-as-needed] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lsci_cray] ==> lib [sci_cray]
+          arg [--no-as-needed] ==> ignore
+          arg [-ldl] ==> lib [dl]
+          arg [--as-needed] ==> ignore
+          arg [-lmpi_cray] ==> lib [mpi_cray]
+          arg [--no-as-needed] ==> ignore
+          arg [-lmpi_gtl_hsa] ==> lib [mpi_gtl_hsa]
+          arg [--as-needed] ==> ignore
+          arg [-ldsmml] ==> lib [dsmml]
+          arg [--no-as-needed] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [--no-as-needed] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lpgas-shmem] ==> lib [pgas-shmem]
+          arg [--no-as-needed] ==> ignore
+          arg [-lquadmath] ==> lib [quadmath]
+          arg [-lmodules] ==> lib [modules]
+          arg [-lfi] ==> lib [fi]
+          arg [-lcraymath] ==> lib [craymath]
+          arg [-lf] ==> lib [f]
+          arg [-lu] ==> lib [u]
+          arg [-lcsup] ==> lib [csup]
+          arg [--as-needed] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-latomic] ==> lib [atomic]
+          arg [--no-as-needed] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lm] ==> lib [m]
+          arg [--no-as-needed] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o] ==> obj [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a] ==> lib [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a]
+          arg [--as-needed] ==> ignore
+          arg [-L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+          arg [-rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> ignore
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so] ==> ignore
+          arg [-lunwind] ==> lib [unwind]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a] ==> lib [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a]
+          arg [--as-needed] ==> ignore
+          arg [-L/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+          arg [-rpath=/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> ignore
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu/libunwind.so] ==> ignore
+          arg [-lunwind] ==> lib [unwind]
+          arg [--no-as-needed] ==> ignore
+          arg [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o] ==> obj [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o]
+          arg [/usr/lib/../lib64/crtn.o] ==> obj [/usr/lib/../lib64/crtn.o]
+        remove lib [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a]
+        remove lib [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/libclang_rt.builtins-x86_64.a]
+        collapse obj [/usr/lib/../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib] ==> [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib]
+        collapse library dir [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib] ==> [/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib]
+        collapse library dir [/opt/cray/pe/mpich/8.1.27/gtl/lib] ==> [/opt/cray/pe/mpich/8.1.27/gtl/lib]
+        collapse library dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/lib]
+        collapse library dir [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/pkgconfig/../] ==> [/opt/cray/pe/cce/16.0.1/cce/x86_64/lib]
+        collapse library dir [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64] ==> [/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64]
+        collapse library dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/bin/../lib/x86_64-unknown-linux-gnu] ==> [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0] ==> [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0]
+        collapse library dir [/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0/../../../../lib64] ==> [/opt/cray/pe/gcc/10.3.0/snos/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64]
+        collapse library dir [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm] ==> [/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm]
+        collapse library dir [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib] ==> [/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib]
+        collapse library dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu] ==> [/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu]
+        implicit libs: [xpmem;sci_cray_mpi;sci_cray;dl;mpi_cray;mpi_gtl_hsa;dsmml;stdc++;pgas-shmem;quadmath;modules;fi;craymath;f;u;csup;pthread;atomic;m;stdc++;m;unwind;c;unwind]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtbegin-x86_64.o;/opt/cray/pe/cce/16.0.1/cce/x86_64/lib/no_mmap.o;/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/clang/16/lib/linux/clang_rt.crtend-x86_64.o;/usr/lib64/crtn.o]
+        implicit dirs: [/opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64/lib;/opt/cray/pe/mpich/8.1.27/ofi/cray/14.0/lib;/opt/cray/pe/mpich/8.1.27/gtl/lib;/opt/cray/pe/dsmml/0.2.2/dsmml/lib;/opt/cray/pe/cce/16.0.1/cce/x86_64/lib;/opt/cray/xpmem/2.5.2-2.4_3.50__gd0f7936.shasta/lib64;/opt/cray/pe/cce/16.0.1/cce-clang/x86_64/lib/x86_64-unknown-linux-gnu;/opt/cray/pe/gcc/10.3.0/snos/lib/gcc/x86_64-suse-linux/10.3.0;/opt/cray/pe/gcc/10.3.0/snos/lib64;/lib64;/usr/lib64;/lib;/usr/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hip/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/hsa/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/lib64;/pfs/lustrep2/projappl/project_462000125/samantao-public/rocm/rocm-5.7.1/llvm;/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/FindHDF5.cmake:238 (try_compile)"
+      - "/pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/share/cmake-3.27/Modules/FindHDF5.cmake:608 (_HDF5_test_regular_compiler_C)"
+      - "cmake/HDF5.cmake:58 (find_package)"
+      - "CMakeLists.txt:82 (include)"
+    directories:
+      source: "/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-c0Lc45"
+      binary: "/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-c0Lc45"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HDF5_C_COMPILER_NO_INTERROGATE"
+      cached: true
+      stdout: |
+        Change Dir: '/project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-c0Lc45'
+        
+        Run Build Command(s): /pfs/lustrep2/appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/cmake -E env VERBOSE=1 /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake -f Makefile cmTC_cebb6/fast
+        /appl/lumi/SW/LUMI-23.09/common/EB/buildtools/23.09/bin/gmake  -f CMakeFiles/cmTC_cebb6.dir/build.make CMakeFiles/cmTC_cebb6.dir/build
+        gmake[1]: Entering directory '/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-c0Lc45'
+        Building C object CMakeFiles/cmTC_cebb6.dir/cmake_hdf5_test.c.o
+        /opt/cray/pe/craype/2.7.23/bin/cc    -MD -MT CMakeFiles/cmTC_cebb6.dir/cmake_hdf5_test.c.o -MF CMakeFiles/cmTC_cebb6.dir/cmake_hdf5_test.c.o.d -o CMakeFiles/cmTC_cebb6.dir/cmake_hdf5_test.c.o -c /project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/hdf5/cmake_hdf5_test.c
+        /project/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/hdf5/cmake_hdf5_test.c:1:10: fatal error: 'hdf5.h' file not found
+        #include <hdf5.h>
+                 ^~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_cebb6.dir/build.make:79: CMakeFiles/cmTC_cebb6.dir/cmake_hdf5_test.c.o] Error 1
+        gmake[1]: Leaving directory '/pfs/lustrep1/projappl/project_465000096/hich/Dorado_HIP/dorado_hip/cmake/CMakeFiles/CMakeScratch/TryCompile-c0Lc45'
+        gmake: *** [Makefile:127: cmTC_cebb6/fast] Error 2
+        
+      exitCode: 2
+...
