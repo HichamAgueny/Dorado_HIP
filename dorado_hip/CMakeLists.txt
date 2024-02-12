@@ -12,19 +12,25 @@ set(PYTHON_EXECUTABLE ${Python_EXECUTABLE})
 
 # Get the site-packages directory
 execute_process(
-  COMMAND ${Python_EXECUTABLE} -c "import site; print(site.getsitepackages())"
+  COMMAND ${PYTHON_EXECUTABLE} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())"
   OUTPUT_VARIABLE PYTHON_SITE_PACKAGES
   OUTPUT_STRIP_TRAILING_WHITESPACE
 )
 
+set(CMAKE_PREFIX_PATH "${PYTHON_SITE_PACKAGES}" ${CMAKE_PREFIX_PATH})
+
 # Print the site-packages directory
 message(STATUS "Python site-packages directory: ${PYTHON_SITE_PACKAGES}")
 
-set(CMAKE_PREFIX_PATH "${PYTHON_SITE_PACKAGES}" ${CMAKE_PREFIX_PATH})
+# Add Torch & ATen includes
+set(ATen_INCLUDE_DIR ${PYTHON_SITE_PACKAGES}/torch/include)
 
-# Find the path to ATen/ATen.h
-set(ATen_INCLUDE_DIR ${PYTHON_SITE_PACKAGES}/torch/include/ATen)
+set(TORCH_INCLUDE_DIRS ${PYTHON_SITE_PACKAGES}/torch/include/torch/csrc/api/include)
 
+message(STATUS "--PROJECT_SOURCE_DIR: ${PROJECT_SOURCE_DIR}")
+
+message(STATUS "--ATen_INCLUDE_DIR: ${ATen_INCLUDE_DIR}")
+message(STATUS "--TORCH_INCLUDE_DIRS: ${TORCH_INCLUDE_DIRS}")
 
 # Check if the header file is found
 if(NOT ATen_INCLUDE_DIR)
