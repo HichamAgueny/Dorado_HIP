@@ -57,7 +57,6 @@ endif()
 if(DEFINED DORADO_LIBTORCH_DIR)
     # Use the existing libtorch we have been pointed at
     message(STATUS "Using existing libtorch at ${DORADO_LIBTORCH_DIR}")
-    #export LD_LIBRARY_PATH=/pfs/lustrep1/projappl/project_465000096/hich/XDorado_hip/PyT2.0.1_rocm5.7_pyt3.9.12.1/lib/python3.9/site-packages/torch/lib:$LD_LIBRARY_PATH
 
     set(TORCH_LIB ${DORADO_LIBTORCH_DIR})
 
