@@ -21,8 +21,8 @@ endfunction()
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux" OR WIN32)
     set(KOI_DIR "${DORADO_3RD_PARTY_DOWNLOAD}/koi")
-    set(KOI_INCLUDE ${KOI_DIR}/koi/lib)
-    set(KOI_LIBRARIES koi)
+    set(KOI_INCLUDE ${KOI_DIR}/include)
+    set(KOI_LIBRARIES ${KOI_DIR}/lib)
 
     message(STATUS "DORADO_3RD_PARTY_DOWNLOAD: ${DORADO_3RD_PARTY_DOWNLOAD}")
     message(STATUS "KOI_DIR: ${KOI_DIR}")
