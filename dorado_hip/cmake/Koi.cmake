@@ -1,5 +1,6 @@
 OPTION(BUILD_KOI_FROM_SOURCE OFF)
 
+
 function(get_best_compatible_koi_version KOI_CUDA)
     if (${CMAKE_SYSTEM_PROCESSOR} STREQUAL "aarch64")
         # Koi only provides binaries for 11.4 and 10.2 when targeting aarch64
@@ -19,43 +20,12 @@ function(get_best_compatible_koi_version KOI_CUDA)
 endfunction()
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux" OR WIN32)
+    set(KOI_DIR "${DORADO_3RD_PARTY_DOWNLOAD}/koi")
+    set(KOI_INCLUDE ${KOI_DIR}/koi/lib)
+    set(KOI_LIBRARIES koi)
+
     message(STATUS "DORADO_3RD_PARTY_DOWNLOAD: ${DORADO_3RD_PARTY_DOWNLOAD}")
     message(STATUS "KOI_DIR: ${KOI_DIR}")
+    message(STATUS "Koi is already available")
 
-    set(KOI_VERSION 0.4.3)
-    if(BUILD_KOI_FROM_SOURCE)
-        message(STATUS "Building Koi from source")
-        set(KOI_DIR "${DORADO_3RD_PARTY_DOWNLOAD}/koi")
-
-        if(NOT EXISTS ${KOI_DIR})
-            if(DEFINED GITLAB_CI_TOKEN)
-                message("Cloning Koi using CI token")
-                execute_process(COMMAND git clone https://gitlab-ci-token:${GITLAB_CI_TOKEN}@git.oxfordnanolabs.local/machine-learning/koi.git ${KOI_DIR})
-            else()
-                message("Cloning Koi using ssh")
-                execute_process(COMMAND git clone git@git.oxfordnanolabs.local:machine-learning/koi.git ${KOI_DIR})
-            endif()
-            execute_process(COMMAND git checkout v${KOI_VERSION} WORKING_DIRECTORY ${KOI_DIR})
-            execute_process(COMMAND git submodule update --init --checkout WORKING_DIRECTORY ${KOI_DIR})
-        endif()
-        add_subdirectory(${KOI_DIR}/koi/lib)
-
-        set(KOI_INCLUDE ${KOI_DIR}/koi/lib)
-        set(KOI_LIBRARIES koi)
-    else()
-	#find_package(CUDAToolkit REQUIRED)
-	#get_best_compatible_koi_version(KOI_CUDA)
-	#set(KOI_DIR libkoi-${KOI_VERSION}-${CMAKE_SYSTEM_NAME}-${CMAKE_SYSTEM_PROCESSOR}-cuda-${KOI_CUDA})
-	set(KOI_CDN_URL "https://cdn.oxfordnanoportal.com/software/analysis")
-
-        if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
-            download_and_extract(${KOI_CDN_URL}/${KOI_DIR}.tar.gz ${KOI_DIR})
-            set(KOI_LIBRARIES ${DORADO_3RD_PARTY_DOWNLOAD}/${KOI_DIR}/${KOI_DIR}/lib/libkoi.a)
-        elseif(WIN32)
-            download_and_extract(${KOI_CDN_URL}/${KOI_DIR}.zip ${KOI_DIR})
-            set(KOI_LIBRARIES ${DORADO_3RD_PARTY_DOWNLOAD}/${KOI_DIR}/${KOI_DIR}/lib/koi.lib)
-        endif()
-        set(KOI_INCLUDE ${DORADO_3RD_PARTY_DOWNLOAD}/${KOI_DIR}/${KOI_DIR}/include)
-
-    endif()
 endif()
