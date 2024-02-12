@@ -18,6 +18,7 @@ target_include_directories(dorado_pch
     SYSTEM
     PUBLIC
         ${TORCH_INCLUDE_DIRS}
+        ${ATen_INCLUDE_DIR}
 )
 
 enable_warnings_as_errors(dorado_pch)
