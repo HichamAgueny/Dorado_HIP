@@ -271,11 +271,11 @@ public:
         while (true) {
             nvtx3::scoped_range loop{loop_scope_str};
             std::unique_lock<std::mutex> input_lock(m_input_lock);
-            roctxRangePushA(input_q_cv_scope_str.c_str());
+            nvtxRangePushA(input_q_cv_scope_str.c_str());
             while (m_input_queue.empty() && !m_terminate.load()) {
                 m_input_cv.wait_for(input_lock, 100ms);
             }
-            roctxRangePop();
+            nvtxRangePop();
 
             if (m_input_queue.empty() && m_terminate.load()) {
                 return;
@@ -285,10 +285,10 @@ public:
             m_input_queue.pop_back();
             input_lock.unlock();
 
-            roctxRangePushA(gpu_lock_scope_str.c_str());
+            nvtxRangePushA(gpu_lock_scope_str.c_str());
             auto gpu_lock = dorado::utils::acquire_gpu_lock(m_options.device().index(),
                                                             m_exclusive_gpu_access);
-            roctxRangePop();
+            nvtxRangePop();
 
             std::unique_lock<std::mutex> task_lock(task->mut);
 
