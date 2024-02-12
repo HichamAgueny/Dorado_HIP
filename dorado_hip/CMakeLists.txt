@@ -5,11 +5,26 @@ set(CMAKE_POLICY_DEFAULT_CMP0091 NEW)
 
 project(dorado)
 
-set(CMAKE_PREFIX_PATH /project/project_465000096/hich/XDorado_hip/PyT2.0.1_rocm5.7_pyt3.9.12.1/lib/python3.9/site-packages)
+# Find Python interpreter
+find_package(Python REQUIRED)
+
+set(PYTHON_EXECUTABLE ${Python_EXECUTABLE})
+
+# Get the site-packages directory
+execute_process(
+  COMMAND ${Python_EXECUTABLE} -c "import site; print(site.getsitepackages())"
+  OUTPUT_VARIABLE PYTHON_SITE_PACKAGES
+  OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+
+# Print the site-packages directory
+message(STATUS "Python site-packages directory: ${PYTHON_SITE_PACKAGES}")
+
+set(CMAKE_PREFIX_PATH "${PYTHON_SITE_PACKAGES}" ${CMAKE_PREFIX_PATH})
 
 # Find the path to ATen/ATen.h
-#find_path(ATen_INCLUDE_DIR ATen/ATen.h)
-set(ATen_INCLUDE_DIR /project/project_465000096/hich/XDorado_hip/PyT2.0.1_rocm5.7_pyt3.9.12.1/lib/python3.9/site-packages/torch/include/ATen) 
+set(ATen_INCLUDE_DIR ${PYTHON_SITE_PACKAGES}/torch/include/ATen)
+
 
 # Check if the header file is found
 if(NOT ATen_INCLUDE_DIR)
