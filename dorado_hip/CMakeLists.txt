@@ -113,7 +113,7 @@ include(cmake/SharedLibHelpers.cmake)
 
 include(cmake/HDF5.cmake)
 include(cmake/VbzPlugin.cmake)
-#include(cmake/Koi.cmake)
+include(cmake/Koi.cmake)
 include(cmake/Pod5.cmake)
 include(cmake/Torch.cmake)
 include(cmake/OpenSSL.cmake)
