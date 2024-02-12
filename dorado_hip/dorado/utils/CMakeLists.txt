@@ -80,6 +80,7 @@ target_include_directories(dorado_utils
     SYSTEM
     PUBLIC
     ${TORCH_INCLUDE_DIRS}
+    ${ATen_INCLUDE_DIR}
     ${DORADO_3RD_PARTY_SOURCE}/NVTX/c/include
     ${DORADO_3RD_PARTY_DOWNLOAD}/metal-cpp/metal-cpp
 )
