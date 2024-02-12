@@ -7,11 +7,11 @@
 #include <ATen/hip/impl/HIPGuardImplMasqueradingAsCUDA.h>
 #include <nvtx3/nvtx3.hpp>
 
-/*
+//*
 extern "C" {
 #include "koi.h"
 }
-*/
+//*/
 namespace dorado::basecall::decode {
 
 DecodeData CUDADecoder::beam_search_part_1(DecodeData data) const {
