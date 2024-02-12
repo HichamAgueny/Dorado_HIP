@@ -85,7 +85,7 @@ if (APPLE AND CMAKE_SYSTEM_PROCESSOR STREQUAL "x86_64")
     endforeach()
 endif()
 
-#find_package(Torch REQUIRED)
+find_package(Torch REQUIRED)
 
 if(APPLE)
     set(TORCH_BUILD_VERSION ${TORCH_VERSION})
@@ -257,6 +257,7 @@ if (USING_STATIC_TORCH_LIB)
             )
             target_include_directories(dorado_torch_lib PUBLIC
                 ${TORCH_INCLUDE_DIRS}
+                ${ATen_INCLUDE_DIR}
             )
             # Replace the torch libs with the helper lib
             set(TORCH_LIBRARIES dorado_torch_lib)
