@@ -1,6 +1,6 @@
 # Dorado
 
-This is a HIP version of Dorado. **The project is still ongoing**. The original version is based on CUDA and can be found [here](https://github.com/nanoporetech/dorado/tree/master). In short Dorado is a high-performance, easy-to-use, open source basecaller for Oxford Nanopore reads.
+This is a HIP version of Dorado. **The project is still ongoing** and is not fully ported to HIP. The original version is based on CUDA and can be found [here](https://github.com/nanoporetech/dorado/tree/master). In short Dorado is a high-performance, easy-to-use, open source basecaller for Oxford Nanopore reads.
 
 # Setup Dorado for LUMI-G system (with rocm support)
 Here is a description on how to setup Dorado-HIP on LUMI-G.
